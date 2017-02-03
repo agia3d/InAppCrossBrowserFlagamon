@@ -385,7 +385,7 @@ public class InAppCrossBrowser extends WebViewBrowser {
         // Close/Done button
         Button close = new Button(cordova.getActivity());
         RelativeLayout.LayoutParams closeLayoutParams =
-                new RelativeLayout.LayoutParams(this.dpToPixels(18),//WindowManager.LayoutParams.WRAP_CONTENT
+                new RelativeLayout.LayoutParams(this.dpToPixels(30),//WindowManager.LayoutParams.WRAP_CONTENT
                         WindowManager.LayoutParams.MATCH_PARENT);
         closeLayoutParams.addRule(RelativeLayout.ALIGN_PARENT_RIGHT);
         close.setLayoutParams(closeLayoutParams);
@@ -404,6 +404,27 @@ public class InAppCrossBrowser extends WebViewBrowser {
                 closeDialog();
             }
         });
+        Button logoFlagamon = new Button(cordova.getActivity());
+        RelativeLayout.LayoutParams logoFlagamonLayoutParams =
+                new RelativeLayout.LayoutParams(this.dpToPixels(105),//WindowManager.LayoutParams.WRAP_CONTENT
+                        this.dpToPixels(30));//WindowManager.LayoutParams.MATCH_PARENT);
+        logoFlagamonLayoutParams.addRule(RelativeLayout.ALIGN_PARENT_BOTTOM);
+        logoFlagamon.setLayoutParams(logoFlagamonLayoutParams);
+        logoFlagamon.setContentDescription("Flagamon");
+        logoFlagamon.setId(10);
+        int logoFlagamonResId =
+                activityRes.getIdentifier("icone_titre_sf", "drawable", cordova.getActivity().getPackageName());
+        Drawable logoFlagamonIcon = activityRes.getDrawable(logoFlagamonResId);
+        if (android.os.Build.VERSION.SDK_INT < android.os.Build.VERSION_CODES.JELLY_BEAN) {
+            logoFlagamon.setBackgroundDrawable(logoFlagamonIcon);
+        } else {
+            logoFlagamon.setBackground(logoFlagamonIcon);
+        }
+    /*    close.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                closeDialog();
+            }
+        });*/
 
         // Add the back and forward buttons to our action button container layout
         //        actionButtonContainer.addView(back);
