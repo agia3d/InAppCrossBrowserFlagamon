@@ -450,7 +450,7 @@ public class InAppCrossBrowser extends WebViewBrowser {
                 WindowManager.LayoutParams.MATCH_PARENT));
    /*     toolbar.setLayoutParams(new RelativeLayout.LayoutParams(WindowManager.LayoutParams.MATCH_PARENT,
                 this.dpToPixels(22)));*/
-        toolbar.setPadding(this.dpToPixels(10), this.dpToPixels(0), this.dpToPixels(10), this.dpToPixels(0));
+        toolbar.setPadding(this.dpToPixels(0), this.dpToPixels(0), this.dpToPixels(0), this.dpToPixels(0));
         toolbar.setHorizontalGravity(Gravity.LEFT);
         toolbar.setVerticalGravity(Gravity.TOP);
         toolbar.setId(1);
@@ -510,8 +510,8 @@ public class InAppCrossBrowser extends WebViewBrowser {
         });
         Button logoFlagamon = new Button(cordova.getActivity());
         RelativeLayout.LayoutParams logoFlagamonLayoutParams =
-                new RelativeLayout.LayoutParams(this.dpToPixels(20),//WindowManager.LayoutParams.WRAP_CONTENT
-                        this.dpToPixels(27));//WindowManager.LayoutParams.MATCH_PARENT);
+                new RelativeLayout.LayoutParams(this.dpToPixels(30),//WindowManager.LayoutParams.WRAP_CONTENT
+                        this.dpToPixels(41));//WindowManager.LayoutParams.MATCH_PARENT);
         logoFlagamonLayoutParams.addRule(RelativeLayout.ALIGN_PARENT_BOTTOM);
         logoFlagamon.setLayoutParams(logoFlagamonLayoutParams);
         logoFlagamon.setContentDescription("Flagamon");
