@@ -489,8 +489,8 @@ public class InAppCrossBrowser extends WebViewBrowser {
         // Close/Done button
         Button close = new Button(cordova.getActivity());
         RelativeLayout.LayoutParams closeLayoutParams =
-                new RelativeLayout.LayoutParams(this.dpToPixels(18),//WindowManager.LayoutParams.WRAP_CONTENT
-                        WindowManager.LayoutParams.MATCH_PARENT);
+                new RelativeLayout.LayoutParams(WindowManager.LayoutParams.WRAP_CONTENT
+                        this.dpToPixels(18));
         closeLayoutParams.addRule(RelativeLayout.ALIGN_PARENT_RIGHT);
         close.setLayoutParams(closeLayoutParams);
         close.setContentDescription("Close Button");
@@ -534,6 +534,7 @@ public class InAppCrossBrowser extends WebViewBrowser {
         //        actionButtonContainer.addView(back);
         toolbar.addView(actionButtonContainer);
         toolbar.addView(close);
+        toolbar.addView(logoFlagamon);
 
         // Add our toolbar to our main view/layout
         main.addView(toolbar);
