@@ -76,5 +76,14 @@
                        target="res/drawable-xhdpi/ic_action_remove.png"/>
         <resource-file src="src/android/res/drawable-xxhdpi/ic_action_remove.png"
                        target="res/drawable-xxhdpi/ic_action_remove.png"/>
+
+        <resource-file src="src/android/res/drawable-hdpi/icone_initiale.png"
+                       target="res/drawable-hdpi/icone_initiale.png"/>
+        <resource-file src="src/android/res/drawable-mdpi/icone_initiale.png"
+                       target="res/drawable-mdpi/icone_initiale.png"/>
+        <resource-file src="src/android/res/drawable-xhdpi/icone_initiale.png"
+                       target="res/drawable-xhdpi/icone_initiale.png"/>
+        <resource-file src="src/android/res/drawable-xxhdpi/icone_initiale.png"
+                       target="res/drawable-xxhdpi/icone_initiale.png"/>
     </platform>
 </plugin>
