@@ -512,7 +512,7 @@ public class InAppCrossBrowser extends WebViewBrowser {
         Button close = new Button(cordova.getActivity());
         RelativeLayout.LayoutParams closeLayoutParams =
                 new RelativeLayout.LayoutParams(WindowManager.LayoutParams.WRAP_CONTENT,
-                        this.dpToPixels(18));
+                        this.dpToPixels(30));
         closeLayoutParams.addRule(RelativeLayout.ALIGN_PARENT_RIGHT);
         close.setLayoutParams(closeLayoutParams);
         close.setContentDescription("Close Button");
