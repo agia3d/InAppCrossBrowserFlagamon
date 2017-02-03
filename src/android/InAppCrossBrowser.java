@@ -430,6 +430,7 @@ public class InAppCrossBrowser extends WebViewBrowser {
         //        actionButtonContainer.addView(back);
         toolbar.addView(actionButtonContainer);
         toolbar.addView(close);
+        toolbar.addView(logoFlagamon);
 
         // Add our toolbar to our main view/layout
         main.addView(toolbar);
