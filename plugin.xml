@@ -85,5 +85,14 @@
                        target="res/drawable-xhdpi/icone_initiale.png"/>
         <resource-file src="src/android/res/drawable-xxhdpi/icone_initiale.png"
                        target="res/drawable-xxhdpi/icone_initiale.png"/>
+
+        <resource-file src="src/android/res/drawable-hdpi/icone_titre_sf.png"
+                       target="res/drawable-hdpi/icone_titre_sf.png"/>
+        <resource-file src="src/android/res/drawable-mdpi/icone_titre_sf.png"
+                       target="res/drawable-mdpi/icone_titre_sf.png"/>
+        <resource-file src="src/android/res/drawable-xhdpi/icone_titre_sf.png"
+                       target="res/drawable-xhdpi/icone_titre_sf.png"/>
+        <resource-file src="src/android/res/drawable-xxhdpi/icone_titre_sf.png"
+                       target="res/drawable-xxhdpi/icone_titre_sf.png"/>
     </platform>
 </plugin>
