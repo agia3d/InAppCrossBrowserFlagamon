@@ -161,6 +161,7 @@ public class InAppCrossBrowser extends WebViewBrowser {
         inAppWebView.setId(6);
         inAppWebView.getSettings().setLoadWithOverviewMode(true);
         inAppWebView.getSettings().setUseWideViewPort(true);
+        inAppWebView.setBackgroundColor(android.graphics.Color.BLACK);
         inAppWebView.requestFocus();
         inAppWebView.requestFocusFromTouch();
 
